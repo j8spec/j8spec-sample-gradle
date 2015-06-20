@@ -3,17 +3,21 @@ defaultTasks 'clean', 'check'
 apply plugin: 'java'
 
 group = 'io.github.j8spec'
-version = '1.0.0'
+version = '1.1.0-SNAPSHOT'
 
 sourceCompatibility = '1.8'
 targetCompatibility = '1.8'
 
 repositories {
     mavenCentral()
+
+    maven {
+        url 'https://oss.sonatype.org/content/repositories/snapshots'
+    }
 }
 
 dependencies {
     testCompile group: 'junit',             name: 'junit',          version: '4.12'
-    testCompile group: 'io.github.j8spec',  name: 'j8spec',         version: '1.0.0'
+    testCompile group: 'io.github.j8spec',  name: 'j8spec',         version: '1.1.0-SNAPSHOT'
     testCompile group: 'org.mockito',       name: 'mockito-core',   version: '1.10.19'
 }
