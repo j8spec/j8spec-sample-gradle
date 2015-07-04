@@ -28,7 +28,7 @@ public class AssumptionExampleTest {{
         });
     });
 
-    context("Linux", () -> {
+    fcontext("Linux", () -> {
         beforeAll(() -> {
             assumeThat(System.getProperty("os.name"), containsString("Linux"));
         });
