@@ -18,4 +18,9 @@ public class Calculator {
         }
         return 0;
     }
+
+    public boolean isPrime(int value) throws InterruptedException {
+        Thread.sleep(250);
+        return false;
+    }
 }
